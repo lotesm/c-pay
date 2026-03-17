@@ -1,0 +1,49 @@
+{
+    "name": "lotesm/c-pay",
+    "description": "C-Pay card payment gateway SDK — works with any PHP project and integrates natively with Laravel/WooCommerce-style flows.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamoho Molapo",
+            "email": "kamoho@jkmolapo.com",
+            "homepage": "https://github.com/lotesm/c-pay"
+        }
+    ],
+    "keywords": ["cpay", "payment", "gateway", "card", "visa", "mastercard", "lesotho", "laravel"],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^8.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "CPay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CPay\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CPay\\Laravel\\CPayServiceProvider"
+            ],
+            "aliases": {
+                "CPay": "CPay\\Laravel\\Facades\\CPay"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

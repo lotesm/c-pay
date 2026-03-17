@@ -89,7 +89,8 @@ class CPayController extends Controller
      * AJAX endpoint — return the current payment status for an order.
      * Replaces: cpay_card_check_status_handler
      */
-    public function checkStatus(Request $request): JsonResponse {
+    public function checkStatus(Request $request): JsonResponse
+    {
         $orderId       = $request->input('order_id');
         $transactionId = $request->input('ext_transaction_id');
 

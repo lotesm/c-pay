@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A framework-agnostic PHP SDK for the **C-Pay card payment gateway** (Visa / MasterCard).  
-Includes first-class Laravel integration via a service provider, facade, controller, and Blade templates. yup
+Includes first-class Laravel integration via a service provider, facade, controller, and Blade templates.
 
 ---
 
@@ -22,7 +22,7 @@ Includes first-class Laravel integration via a service provider, facade, control
 ## Installation
 
 ```bash
-composer require c-pay/c-pay
+composer require lotesm/c-pay
 ```
 
 Laravel's auto-discovery registers the service provider and facade automatically.
@@ -232,4 +232,4 @@ vendor/bin/phpunit
 
 ## License
 
-MIT © Moeketsi Titisi — [chaperone.co.ls](https://chaperone.co.ls)
+MIT © Kamoho Molapo — [jkmolapo.com](https://jkmolapo.com) by Moeketsi Titisi — [chaperone.co.ls](https://chaperone.co.ls)
